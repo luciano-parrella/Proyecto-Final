@@ -30,7 +30,7 @@ a {
 }
 
 .text-h3 {
-  font-size: 2rem;
+  font-size: 1.5rem;
   font-weight: bold;
   line-height: 1.6;
 }
@@ -83,81 +83,19 @@ a {
           align-items: center;
 }
 
+@media (max-width: 480px) {
+  #intro {
+    background: url("/img/background_index.jpg") center;
+    background-size: auto;
+  }
+}
+
 .introHijo {
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
   text-align: center;
-}
-
-.hola {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-}
-
-.flor {
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-}
-
-.luciano {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  background: url(/img/background_index.jpg);
-  background-size: cover;
-  height: 400px;
-}
-
-.index {
-  background-image: url(/img/background_index.jpg);
-  background-size: cover;
-  height: 300px;
-}
-
-.index h1 {
-  color: white;
-  padding-top: 40px;
-  padding-left: 80px;
-}
-
-@media (max-width: 767px) {
-  .index h1 {
-    padding-left: 40px;
-  }
-}
-
-@media (max-width: 480px) {
-  .index h1 {
-    padding-left: 10px;
-  }
-}
-
-.index h2 {
-  color: white;
-  padding-left: 80px;
-}
-
-@media (max-width: 767px) {
-  .index h2 {
-    padding-left: 40px;
-  }
-}
-
-@media (max-width: 480px) {
-  .index h2 {
-    padding-left: 10px;
-  }
 }
 
 .more {
@@ -250,7 +188,7 @@ a {
 
 @media (max-width: 767px) {
   #galeria {
-    width: 100%;
+    width: 90%;
     display: -ms-grid;
     display: grid;
     -ms-grid-rows: 1fr 1fr 1fr 1fr 1fr;
@@ -263,7 +201,7 @@ a {
 
 @media (max-width: 480px) {
   #galeria {
-    width: 100%;
+    width: 90%;
     display: -ms-grid;
     display: grid;
     -ms-grid-rows: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;

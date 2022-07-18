@@ -6,62 +6,16 @@
     height: 400px;
     display: flex;
     align-items: center;
+
+    @include breakpoint(sm) {
+        background: url("/img/background_index.jpg") center;
+        background-size: auto;   
+    }
 }
 
 .introHijo{
     flex-direction: column;
     text-align: center;
-}
-
-.hola{
-    display: flex;
-    align-items: center;
-}
-
-.flor{
-    flex-direction: column;
-}
-
-.luciano{
-    display: flex;
-    align-items: center;
-    background: url(/img/background_index.jpg);
-    background-size: cover;
-    height: 400px;
-}
-
-
-.index{
-    background-image: url(/img/background_index.jpg);
-    background-size: cover;
-    height: 300px;
-
-    h1{
-        color: white;
-        padding-top: 40px;
-        padding-left: 80px;
-
-        @include breakpoint(md) {
-            padding-left: 40px;
-        }
-
-        @include breakpoint(sm) {
-            padding-left: 10px;
-        }
-    }
-
-    h2{
-        color: white;
-        padding-left: 80px;
-
-        @include breakpoint(md) {
-            padding-left: 40px;
-        }
-
-        @include breakpoint(sm) {
-            padding-left: 10px;
-        }
-    }
 }
 
 .more {

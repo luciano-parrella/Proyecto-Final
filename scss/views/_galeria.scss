@@ -42,9 +42,8 @@
                             "salon7 salon8 salon9";
     gap: 10px;
     
-
     @include breakpoint(md) {
-        width: 100%;
+        width: 90%;
         display: grid;
         grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
         grid-template-columns: 1fr 1fr;
@@ -55,7 +54,7 @@
         }     
     
     @include breakpoint(sm) {
-        width: 100%;
+        width: 90%;
         display: grid;
         grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
         grid-template-columns: 1fr;
