@@ -18,13 +18,13 @@ a {
 }
 
 .text-h1 {
-  font-size: 3rem;
+  font-size: 2.5rem;
   font-weight: 600;
   line-height: 1.6;
 }
 
 .text-h2 {
-  font-size: 2.8rem;
+  font-size: 2rem;
   font-weight: 200;
   line-height: 1.6;
 }
@@ -221,6 +221,12 @@ a {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+}
+
+@media (max-width: 480px) {
+  #galeria img {
+    height: 80%;
+  }
 }
 
 #footer {

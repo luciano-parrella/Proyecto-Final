@@ -75,6 +75,10 @@
         box-shadow: 0px 0px 10px black;
         border-radius: 20px;
         align-items: center;
+
+        @include breakpoint(sm) {
+            height: 80%;
+        }
     }
 }
 
