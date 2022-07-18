@@ -1,0 +1,86 @@
+@import "../base/variables";
+
+#bodyGaleria{
+    width: 100%;
+    height: 100%;
+    display: grid;
+    grid-template-rows: auto 2fr auto;
+    grid-template-columns: 1fr;
+    grid-template-areas:    "header"
+                            "main"
+                            "footer";
+}
+
+#header{
+    grid-area: header;
+    width: 100%;
+}
+
+#mainGaleria{
+    grid-area: main;
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    background-color: lightgray;
+
+    h1{
+        text-transform: uppercase;
+        font-size: 2rem;
+        font-weight: 600;
+        text-align: center;
+    }
+}
+
+#galeria{
+    width: 100%;
+    display: grid;
+    grid-template-rows: 1fr 1fr 1fr;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-areas:    "salon1 salon2 salon3"
+                            "salon4 salon5 salon6"
+                            "salon7 salon8 salon9";
+    gap: 10px;
+    
+
+    @include breakpoint(md) {
+        width: 100%;
+        display: grid;
+        grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
+        grid-template-columns: 1fr 1fr;
+        grid-template-areas:    "salon1 salon2"
+                                "salon3 salon4"
+                                "salon5 salon6"
+                                "salon7 salon8";
+        }     
+    
+    @include breakpoint(sm) {
+        width: 100%;
+        display: grid;
+        grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+        grid-template-columns: 1fr;
+        grid-template-areas:    "salon1"
+                                "salon2"
+                                "salon3"
+                                "salon4"
+                                "salon5"
+                                "salon6"
+                                "salon7"
+                                "salon8"
+                                "salon9";
+    }
+
+    img{
+        width: 90%;
+        height: 90%;
+        box-shadow: 0px 0px 10px black;
+        border-radius: 20px;
+        align-items: center;
+    }
+}
+
+#footer{
+    grid-area: footer;
+    width: 100%;
+}
+

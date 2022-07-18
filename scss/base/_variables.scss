@@ -1,0 +1,14 @@
+
+$font: 'Nunito Sans', sans-serif;
+
+$texts: 
+    "h1"   3rem   600 1.6, 
+    "h2"   2.8rem   200 1.6, 
+    "h3"   2rem   bold 1.6, 
+    "p"   1.2rem   200;
+
+$breakpoints: (
+    sm: 480px,
+    md: 767px,
+    lg: 1024px,
+);

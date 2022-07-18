@@ -1,0 +1,22 @@
+@import "../base/variables";
+
+#footer {
+    font-size: 30px;
+    background-color: black;
+    text-align: center;
+    color: white;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    
+    i{
+        padding: 5px;
+    }
+
+    i:hover {
+      color: gray;
+    }
+
+    p{
+        font-size: 1rem;
+    }
+  }

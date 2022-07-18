@@ -1,0 +1,20 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito+Sans&display=swap');
+@import "./variables";
+
+*{
+    padding: 0;
+    margin: 0;
+}
+
+html{
+    font-size: 62,5%;
+}
+
+body{
+    font-family: $font;
+    line-height: 2;
+}
+
+a{
+    text-decoration: none;
+}
